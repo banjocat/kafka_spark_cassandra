@@ -1,0 +1,9 @@
+version: '2'
+services:
+  kafka:
+    image: spotify/kafka
+  cassandra:
+    image: cassandra:3.5
+  spark:
+    image: sequenceiq/spark:1.6.0
+
