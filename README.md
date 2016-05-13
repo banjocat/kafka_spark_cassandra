@@ -1,4 +1,4 @@
-# Learning excercise to:
+# Personal learning excersise
   * How to connect the Kafka, Apache Spark and Cassandra
   * Using docker to connect all the services.
   * Use README driven development!
