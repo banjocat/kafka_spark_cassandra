@@ -1,7 +1,7 @@
-## Purpose
-To learn how to connect the Kafka, Apache Spark and Cassandra
-Using docker to connect all the services.
-Use README driven development!
+# Learning excercise to:
+  * How to connect the Kafka, Apache Spark and Cassandra
+  * Using docker to connect all the services.
+  * Use README driven development!
 
 # Services
 ## kafka_producer
