@@ -1,6 +1,9 @@
 version: '2'
 services:
   kafka:
+    environment:
+      - ADVERTISED_HOST=kafka
+      - ADVERTISED_PORT=9092
     image: spotify/kafka
   cassandra:
     image: cassandra:3.5
