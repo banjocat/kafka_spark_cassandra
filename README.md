@@ -1,6 +1,3 @@
-# kafka_spark_cassandra
-Tech demo of Kafka, spark and cassandra
-
 ## Purpose
 To learn how to connect the Kafka, Apache Spark and Cassandra
 Using docker to connect all the services.
