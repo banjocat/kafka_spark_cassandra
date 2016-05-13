@@ -9,9 +9,7 @@ PRODUCER = kafka.KafkaProducer(bootstrap_servers=['kafka:9092'])
 
 def produce():
     votes = ('up', 'down')
-    print "Sending topic"
-    meta = PRODUCER.send('vote', random.choice(votes))
-    print meta
+    PRODUCER.send('vote', random.choice(votes))
     PRODUCER.flush()
 
 
