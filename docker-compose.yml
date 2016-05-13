@@ -6,4 +6,12 @@ services:
     image: cassandra:3.5
   spark:
     image: sequenceiq/spark:1.6.0
+  kafka_producer:
+    build: ./kafka_producer/.
+    volumes: 
+      - ./kafka_producer:/code/
+    command: python producer.py
+    depends_on: 
+      - kafka
+
 
