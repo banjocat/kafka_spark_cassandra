@@ -8,7 +8,14 @@ services:
   cassandra:
     image: cassandra:3.5
   spark:
-    image: sequenceiq/spark:1.6.0
+    build: ./spark/.
+    ports:
+      - "9000:8080"
+    volumes:
+      - ./spark/.:/code/
+    depends_on:
+      - kafka
+      - cassandra
   kafka_producer:
     build: ./kafka_producer/.
     volumes: 
